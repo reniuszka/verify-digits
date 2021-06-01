@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700;800&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #d5d5d5a6;
+  font-family: 'Mulish', sans-serif;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  background-color: pink;
+  border: 3px #000 solid;
+  border-radius: 1rem;
+  padding: 3rem 1rem;
+  max-width: 100rem;
+  text-align: center;
+}
+h1 {
+  line-height: 6rem;
+}
+p {
+  line-height: 1.4rem;
+}
+.code-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2rem 0;
+}
+
+.code {
+  border-radius: 0.5rem;
+  border: 2px solid #eee;
+  font-size: 3rem;
+  font-weight: 300;
+  text-align: center;
+  margin: 0.51rem;
+  height: 6rem;
+  width: 5rem;
+  -moz-appearance: textfield;
+}
+.code::placeholder {
+  color: rgb(172, 150, 154);
+}
+
+.code:valid {
+  border-color: rgb(162, 143, 188);
+  box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.1);
+}
+.code::-webkit-inner-spin-button,
+.code::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.info {
+  display: inline-block;
+  padding: 1rem;
+  max-width: 30rem;
+  background-color: #eaeaea;
+  border-radius: 0.5rem;
+  line-height: 1.2rem;
+}
+
+@media (max-width: 900px) {
+  .code-container {
+    flex-wrap: wrap;
+  }
+
+  .code {
+    font-size: 2rem;
+    margin: 0.31rem;
+    height: 4rem;
+    width: 3rem;
+  }
+} ;
